@@ -1,0 +1,17 @@
+{
+  "username": "12306账号",
+  "password": "12306密码",
+  "passengers": [{
+    "name": "乘客姓名",
+    "id_no": "xxxxxxxxxx",
+    "id_type": 1
+  }],
+  "ticket": {
+    "date": "2019-01-31", // 乘车日期
+    "from_name": "厦门", // 出发站
+    "to_name": "重庆", // 到达站
+    "purpose_codes": "ADULT",
+    "seats": ["ze"], // 座位信息，参考  src/utils/index.js, 小写
+    "train_codes": []
+  }
+}
