@@ -65,7 +65,7 @@ class Buyer extends Base {
               this.log('futureBuy setTimeout run', buyInfo.startTime.getTime() - new Date(1).getTime() + 100, buyInfo)
               setTimeout(() => {
                 this.buy(buyInfo)
-              }, buyInfo.startTime.getTime() - new Date(1).getTime() + 100)
+              }, buyInfo.startTime.getTime() - new Date().getTime() + 100)
             })
           }
         }
