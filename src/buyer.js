@@ -56,13 +56,13 @@ class Buyer extends Base {
             this.log('------------------------log futureBuys', this.buyInfo)
         if (futureBuys.length > 0) {
           if (futureBuys.length > 0) {
-            return
+            // return
             const minFutureTime = new Date(Math.min(...futureBuys.map(l => l.startTime)))
             if (minFutureTime - now < jobDue) {
               this.jobEnd = new Date(minFutureTime.getTime() + jobDue)
             }
             futureBuys.forEach(buyInfo => {
-              this.log('futureBuy setTimeout run', buyInfo.startTime.getTime() - new Date(1).getTime() + 100, buyInfo)
+              this.log('futureBuy setTimeout run', buyInfo.startTime.getTime() - new Date().getTime() + 100, buyInfo)
               setTimeout(() => {
                 this.buy(buyInfo)
               }, buyInfo.startTime.getTime() - new Date().getTime() + 100)
