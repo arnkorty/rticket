@@ -64,6 +64,9 @@ class Buyer extends Base {
             futureBuys.forEach(buyInfo => {
               this.log('futureBuy setTimeout run', buyInfo.startTime.getTime() - new Date().getTime() + 100, buyInfo)
               setTimeout(() => {
+                this.checkLogin()
+              }, buyInfo.startTime.getTime() - new Date().getTime() + 8000 + 20000 * Math.random())
+              setTimeout(() => {
                 this.buy(buyInfo)
               }, buyInfo.startTime.getTime() - new Date().getTime() + 100)
             })
