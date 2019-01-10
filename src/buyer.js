@@ -3,7 +3,7 @@ const qs = require('querystring')
 const utils = require('./utils')
 
 const jobDue = 1000 * 60 * 80
-const loginMonitorTime = 60 * 1000 * 2
+const loginMonitorTime = 60 * 1000 * 4
 const minTimeDue = 1000 * 60 * 2
 const testFlag = false //process.env.NODE_ENV !== 'production'
 

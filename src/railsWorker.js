@@ -10,7 +10,7 @@ class Worker {
    * @param {*} ticketInfo
    *  { username, password, passenger, ticket }
    */
-  constructor(ticketInfo, workNum = 4) {
+  constructor(ticketInfo, workNum = 2) {
     const { username, password, passengers, ticket } = ticketInfo
     this.username = username
     this.password = password

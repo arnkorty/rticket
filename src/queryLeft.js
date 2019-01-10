@@ -122,7 +122,7 @@ class QueryLeft {
           const nowDiff = now - this.buyInfo.startTime.getTime()
           let futureDiff = -1
           // let isFutureWait = false
-          let diff = 2000 + 500 * Math.random()
+          let diff = 2000 + 5000 * Math.random()
           if (this.buyInfo.futureTime) {
             futureDiff = this.buyInfo.futureTime.getTime() - now
           }
